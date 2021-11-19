@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header .mobile-menu {
+    display: none;
+    position: fixed;
+    background: 
+#333;
+    width: 65%;
+    height: 100%;
+    top: 0;
+    right: -400px;
+    transition: right 0.4s;
+}
+
+header .container button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+header .container button:focus + .mobile-menu {
+    right: 0;
+}
+
+/* RED */ 
+
+.red {
+    background: 
+#ed145b;
+    padding: 15px 0;
+}
+
+.red .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.red div {
+    color: 
+#fff;
+}
+
+.red img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* HEADER */
+
+header {
+    padding: 35px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #fff;
+}
+
+header h2:hover {
+    color: #ed145b;
+    cursor: pointer;
+}
+
+header a:hover {
+    border-color: 
+#ed145b;
+}
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+#ed145c41, 
+#ed145c41), url(https://www.cssigniter.com/demos/roxima/wp-content/uploads/sites/28/2021/07/slider.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.banner .message {
+    color: 
+#fff;
+    text-align: center;
+    width: 700px;
+}
+
+.banner .message h2 {
+    font-size: 50px;
+}
+
+.banner .message p {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.banner .message a {
+    font-size: 15px;
+    background: 
+#ed145b;
+    color: 
+#fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* PRODUCTS */ 
+
+.products .container > h2 {
+    color: #4a4a4a;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.products .container > h2 a {
+    color: 
+#00a8de;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.products .container > p {
+    color: 
+#4a4a4a;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.products {
+    padding: 80px 0;
+}
+
+.products .grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.products .grid .product {
+    width: 20%;
+    border: 1px solid 
+#dddddd;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.products .grid .product .sale {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: 
+#F08804;
+    color: 
+#fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.products .grid .product .image {
+    margin-top: 20px;
+    background-image: url(https://www.cssigniter.com/preview/nozama-lite/files/2018/10/apple_iphone_8_plus.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100%;
+}
+
+.products .grid .product .info {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.products .grid .product .info .type {
+    color: 
+#8e8e8e;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.products .grid .product .info h3 {
+    color: 
+#3e4e64;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.products .grid .product .info .prices span {
+    color: #B12704;
+}
+
+.products .grid .product .info .prices .old-price {
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.products .grid .product .info .prices .price {
+    font-size: 16px;
+}
+
+.products .grid .product .info i {
+    font-size: 12px;
+    color: 
+#F08804;
+}
+
+/* MEDIA QUERIES */ 
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 660px) {
+    header .mobile-menu {
+        display: block;
+    }
+    .products .grid .product {
+        width: 100%;
+    }
+    header .container .menu {
+        display: none;
+    }
+    header .container button {
+        display: block !important;
+    }
+}
